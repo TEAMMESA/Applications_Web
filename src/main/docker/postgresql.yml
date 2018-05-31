@@ -1,0 +1,11 @@
+version: '2'
+services:
+    plateforme_web_mesa-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/Plateforme_Web_MESA/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=Plateforme_Web_MESA
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

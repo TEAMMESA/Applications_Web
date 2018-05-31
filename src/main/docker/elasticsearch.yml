@@ -1,0 +1,9 @@
+version: '2'
+services:
+    plateforme_web_mesa-elasticsearch:
+        image: elasticsearch:2.4.1
+        # volumes:
+        #     - ~/volumes/jhipster/Plateforme_Web_MESA/elasticsearch/:/usr/share/elasticsearch/data/
+        ports:
+            - 9200:9200
+            - 9300:9300
